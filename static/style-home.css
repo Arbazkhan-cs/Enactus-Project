@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-img{
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100%;
+    z-index: -1;
+}
+
+.navbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 200;
+    background: #000;
+}
+
+.header-container{
+    position: relative;
+    background:black;
+    z-index: 100;
+    height: 41rem;
+}
+
+.nav-link {
+    font-family: 'Roboto Mono';
+    letter-spacing: 6px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-item {
+    margin-right: 1%;
+    margin-left: 1%;
+    font-weight: normal;
+    position: relative;
+    z-index: 200;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 100;
+}
+
+.contents {
+    position: relative;
+    text-align: center;
+    z-index: 100;
+    padding-top: 10rem;
+    height: inherit;
+}
+.nav-icon{
+    height:2rem;
+}
+.header-p {
+    position: relative;
+    z-index: 100;
+}
+
+.triangle-left {
+    width: 0;
+    height: 0;
+    transform: rotate(14deg);
+    margin-left: 32%;
+    border-top: 15px solid transparent;
+    border-right: 30px solid yellow;
+    border-bottom: 15px solid transparent;
+    position: relative;
+    z-index: 100;
+}
+
+.btn {
+    margin-top: 1rem;
+    border-radius: 0px;
+    width: 10rem;
+    border: solid white;
+    padding: 0.5% 0.5%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    z-index: 50;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.nav-link {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.header-h1 {
+    color: yellow;
+    font-family: 'Secular One';
+    font-size: 5rem;
+}
+
+.header-p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:900px) {
+    .header-h1{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width:512px) {
+    .header-h1{
+        font-size: 3em;
+    }
+    .contents{
+        padding: 2rem 1rem 2rem;
+    }
+    .header-p{
+        margin: 0;
+    }
+    .header-container{
+        height: inherit;
+    }
+}
+
+
+
+
+/* ==============================About=======================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+
+.about-section{
+    padding: 5rem 2rem 2rem;
+    /* height: 41rem; */
+    background-color: white;
+}
+.about-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-image {
+    width: 30rem;
+    display: inline;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.about-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #FFBA00;
+}
+
+.about-p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    /* width: 85%; */
+}
+
+
+.about-btn {
+    border-radius: 0px;
+    width: 12rem;
+    border: solid #ffba00;
+    font-size: 1.5rem;
+    color: black;
+    background-color: transparent;
+    position: relative;
+    /* bottom: 2rem; */
+    font-weight: 600;
+}
+
+.about-btn:hover {
+    background-color: #ffba00;
+}
+
+
+@media screen and (max-width:1036px) {
+    .about-image {
+        align-items: center;
+        width: 20rem;
+    }
+    .ab-image{
+        margin: auto;
+        width: 50%;
+    }
+
+    .about-inner{
+        display: block;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about-image {
+        margin-bottom: 2rem;
+    }
+    .about-heading{
+        font-size: 3rem;
+    }
+    .about-p{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:656px) {
+    .about-image {
+        width: 10rem;
+    }
+
+    .about-p{
+        font-size: 1rem;
+    }
+    .about-heading{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .ab-image{
+        margin: 0;
+    }
+    
+}
+
+.footer{
+    text-align: left !important;
+    background-color: #1a1a1a;
+    color: white;
+    width: 100%;
+}
+
+/* =================================================Contact Us===================================== */
+label{
+    color: #ffff00;
+    font-weight: bold;
+}
+.contact-text .h1{
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.form-control{
+    margin: 0.2rem 0 1rem;
+    resize: none;
+}
+
+.image .row .img{
+    height: inherit;
+}
+
+.contact-img{
+    margin-left: -2rem;
+    background-color: rgb(78, 75, 75);
+
+}
+.image .row{
+    height: 40rem;
+}
+
+.contact-text{
+    text-align: center;
+    color: #ffff00;
+}
+
+.submited-text{
+    color: rgb(1, 255, 1);
+}
+
+.contact-form{
+    padding: 0 2rem 0;
+}
+
+@media (max-width: 954px) {
+    .image{
+        display: none;
+    }
+    .contact-form{
+        height: 22rem;
+        padding: 0 5rem 2rem;
+    }
+    .contact-form{
+        margin:0;
+    }
+}
+@media (max-width: 682px) {
+    .form-row{
+        display: block;
+    }
+    .contact-form{
+        height: 28rem;
+        padding: 0 3rem 0;
+    }
+    .contact-text .h1{
+        /* font-size: 2.5rem; */
+        letter-spacing: 0.5rem;
+    }
+}
+@media (max-width: 418px) {
+    .contact-form{
+        padding: 0 1rem 0;
+        height: 28rem;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .contact-text .h1{
+        font-size: 2rem;
+    }
+    .contact-text .p{
+        font-size: 0.8rem;
+    }
+}
+
+
+/* =========================================Blog Page========================== */
+/* Header/Blog Title */
+.blog-container{
+    /* height: 41rem; */
+    background-color: black;
+    padding: 5rem 2rem 4rem;
+}
+.heading {
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    background: rgb(0, 0, 0);
+    color: #ffff00;
+}
+.blog-h2{
+      color: #ffff00;
+  }
+  /* Left column */
+  .column {   
+    float: left;
+    width: 25%;
+  }
+  
+  /* image */
+  .fakeimg {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    /* padding: 10px; */
+    border-radius: 10px;
+
+}
+.fakeimg img{
+      border-radius: 10px;
+    height: inherit;
+    width: inherit;
+    /* margin: 0;
+    padding: 0; */
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     float: left;
+     background-color: rgb(0, 0, 0);
+     padding: 10px;
+     margin-top: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+  /* Footer */
+  .footer {
+    padding: 0px;
+    text-align: right;
+    background: rgb(0, 0, 0);
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+  }
+  .footag{
+      color:whitesmoke;
+      text-decoration: none;
+      font-size:25px;
+      padding:5px;
+  }
+  @media screen and (max-width: 800px) {
+    .column {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+
+
+  /* ================================================== */
+  .links-list a img{
+    height:2rem;
+    margin:0 !important;
+    padding:0 !important;
+  }

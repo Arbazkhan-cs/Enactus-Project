@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <div class="row contact-img">
+        <div class="col image">
+            <dv class="row">
+                <img src="images/contact.jpg" alt="contact-us" class="img">
+            </dv>
+        </div>
+
+        <div class="col py-5 contact-us">
+            <div class="row contact-text">
+                <p class="h1">Contact US</p>
+                <p class="p">We Push for Governments Worldwide to <br> protect oceans and marine life</p>
+                <p class="submited-text">{{submited}}</p>
+            </div>
+
+
+            {{!-- Here our Form Starts --}}
+            <form action="/" method="post" class="contact-form text-light">
+                <div class="row form-row">
+                    <div class="col">
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" class="form-control" placeholder="Name" id="name" name="Name" required>
+                    </div>
+
+                    <div class="col">
+                        <label class="form-label" for="Email">Email</label>
+                        <input type="email" class="form-control" placeholder="Email" id="Email" name="Email" required>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <label class="form-label" for="Subject">Subject</label>
+                    <input type="text" class="form-control" placeholder="subject" id="Subject" name="Subject" required>
+                </div>
+
+
+                <div class="mb-3">
+                    <label class="form-label" for="validationTextarea">Discription</label>
+                    <textarea class="form-control " id="validationTextarea" placeholder="Enter your Message" rows="3"
+                        name="Description" required></textarea>
+                </div>
+
+
+                <div class="col">
+                    <button class="btn btn-outline-light w-100">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
