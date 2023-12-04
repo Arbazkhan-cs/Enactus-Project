@@ -32,7 +32,7 @@
 
 .nav-link {
     font-family: 'Roboto Mono';
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     color: white;
     font-weight: bold;
     position: relative;
@@ -40,8 +40,9 @@
 }
 
 .nav-item {
-    margin-right: 1%;
-    margin-left: 1%;
+    /* margin-right: 1%; */
+    /* margin-left: 1%; */
+
     font-weight: normal;
     position: relative;
     z-index: 200;
@@ -53,6 +54,7 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 100;
+    gap: 1rem;
 }
 
 .contents {

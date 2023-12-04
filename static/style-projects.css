@@ -1,0 +1,51 @@
+@import url(https://db.onlinewebfonts.com/c/157aa88d85ea328fb5d533dfa569333b?family=TT+Ramillas+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200&family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@500&display=swap');
+
+.projects {
+    margin: 0%;
+    font-weight: bolder;
+    color: #FEC75B;
+    font-family: "TT Ramillas Regular";
+    text-align: center;
+    margin-top: 100px;
+    font-size: 5vw;
+    font-style: normal;
+}
+
+.img-projects {
+    filter: grayscale(100%);
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+    width: 350px;
+    height: 250px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container-projects {
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.heading-projects {
+    padding: 20px;
+    color: #FFBA00;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+}
+
+.content-projects {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.P1-projects {
+    padding: 50px;
+    margin: 20px;
+}

@@ -17,7 +17,7 @@ const tempelatePath = path.join(__dirname, "../tempelate");
 hbs.registerPartials(tempelatePath);
 
 // Setting veiw engine
-// app.set("views", "../views");
+app.set("views", "../views");
 app.set("view engine", "hbs");
 
 
@@ -51,6 +51,9 @@ app.get("/blog", (req, res)=>{
 })
 app.get("/contact", (req, res)=>{
     res.render("Contact-Us.hbs");
+})
+app.get("/projects", (req, res)=>{
+    res.render("projects.hbs");
 })
 
 
