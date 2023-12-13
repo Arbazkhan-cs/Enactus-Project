@@ -21,9 +21,9 @@ app.set("views", "../views");
 app.set("view engine", "hbs");
 
 
-// Now Working with Monggose (Database)
+// Now Working with Mongoose (Database)
 // Connecting the our mongodb database
-mongoose.connect("mongodb://127.0.0.1:27017/Enactus");
+mongoose.connect("mongodb+srv://arbazkhaancs:arbazkhan.cs@cluster0.p3ig81c.mongodb.net/?retryWrites=true&w=majority");
 
 // Creating schema
 const createSchema = mongoose.Schema({
